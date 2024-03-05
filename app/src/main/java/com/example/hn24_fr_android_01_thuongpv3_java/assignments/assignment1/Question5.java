@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class Question5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int input, output = 1;
+        int inputNumber, outputNumber = 1;
         do {
-            input = sc.nextInt();
+            inputNumber = sc.nextInt();
         }
-        while (input < 0);
-        for(int i = input; i > 0; i--){
-            output = output * i;
+        while (inputNumber < 0);
+        for(int i = inputNumber; i > 0; i--){
+            outputNumber = outputNumber * i;
         }
-        System.out.println(output);
+        System.out.println(outputNumber);
 
     }
 }
