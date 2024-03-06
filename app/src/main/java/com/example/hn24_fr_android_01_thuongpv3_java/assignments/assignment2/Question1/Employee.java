@@ -40,7 +40,6 @@ public abstract class Employee {
     }
 
     public void printInformation(String name, String date, int salary) {
-        this.salary = salary;
         System.out.println("Infomation: " + name + " | " + date + " | " + salary);
     }
     public abstract int caculateSalary();

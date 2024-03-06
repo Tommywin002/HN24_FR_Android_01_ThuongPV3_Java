@@ -3,10 +3,7 @@ package com.example.hn24_fr_android_01_thuongpv3_java.assignments.assignment2.Qu
 public class OfficeEmployee extends Employee{
     private int hourNumber;
 
-    public OfficeEmployee() {
-        super();
 
-    }
 
     public int getHourNumber() {
         return hourNumber;

@@ -3,10 +3,7 @@ package com.example.hn24_fr_android_01_thuongpv3_java.assignments.assignment2.Qu
 public class ManifactureEmployee extends Employee{
     private int maniualSalary;
     private int productNumber;
-    public ManifactureEmployee() {
-        super();
 
-    }
 
     public int getManiualSalary() {
         return maniualSalary;

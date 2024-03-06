@@ -9,12 +9,14 @@ public class Main {
         manifactureEmployee1.setBirthDay("2/2/2022");
         manifactureEmployee1.setManiualSalary(2000);
         manifactureEmployee1.setProductNumber(30);
-        manifactureEmployee1.printInformation(manifactureEmployee1.getName(), manifactureEmployee1.getBirthDay(), manifactureEmployee1.caculateSalary());
+        manifactureEmployee1.setSalary(manifactureEmployee1.caculateSalary());
+        manifactureEmployee1.printInformation(manifactureEmployee1.getName(), manifactureEmployee1.getBirthDay(), manifactureEmployee1.getSalary());
 
         officeEmployee1.setName("Tom");
         officeEmployee1.setBirthDay("13/4/2002");
         officeEmployee1.setHourNumber(50);
-        officeEmployee1.printInformation(officeEmployee1.getName(), officeEmployee1.getBirthDay(), officeEmployee1.caculateSalary());
+        officeEmployee1.setSalary(officeEmployee1.caculateSalary());
+        officeEmployee1.printInformation(officeEmployee1.getName(), officeEmployee1.getBirthDay(), officeEmployee1.getSalary());
 
         Employee manifactureEmployee2 = new ManifactureEmployee();
         Employee officeEmployee2 = new OfficeEmployee();
