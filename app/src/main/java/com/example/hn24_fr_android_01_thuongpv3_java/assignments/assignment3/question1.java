@@ -23,6 +23,8 @@ public class question1 {
             if(secondNumber == 0.0){
                 throw new ArithmeticException("cant divide 0");
             }
+            else
+                System.out.println("Result: " + (firstNumber/secondNumber));
         }
         catch (ArithmeticException arithmeticException){
             System.out.println("Cant divide 0");
