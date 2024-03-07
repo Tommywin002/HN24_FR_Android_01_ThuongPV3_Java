@@ -44,9 +44,9 @@ public abstract class Customer {
     public void setPaymentMoney(double paymentMoney) {
         this.paymentMoney = paymentMoney;
     }
-    public double caculateTotalMoney( int productAmount, double productPrice){
-        return 0;
-    }
+    public abstract double caculateTotalMoney( int productAmount, double productPrice);
+
+    public abstract double caculateTotalMoney(int productAmount, double productPrice, int year);
 
     public abstract void printTotalMoney(String name, double totalMoney);
 

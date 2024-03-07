@@ -2,6 +2,9 @@ package com.example.hn24_fr_android_01_thuongpv3_java.assignments.assignment2.Qu
 
 public class Main {
     public static void main(String[] args) {
+        addCustomer();
+    }
+    public static void addCustomer(){
         CloseCustomer closeCustomer = new CloseCustomer();
         closeCustomer.setName("Tim");
         closeCustomer.setProductAmount(10);

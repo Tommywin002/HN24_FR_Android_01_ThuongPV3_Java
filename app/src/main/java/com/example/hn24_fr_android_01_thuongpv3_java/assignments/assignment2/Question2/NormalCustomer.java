@@ -5,6 +5,12 @@ public class NormalCustomer extends Customer{
         double totalPriceWithoutVAT = productAmount * productPrice;
         return totalPriceWithoutVAT + (totalPriceWithoutVAT * 10 / 100);
     }
+
+    @Override
+    public double caculateTotalMoney(int productAmount, double productPrice, int year) {
+        return 0;
+    }
+
     @Override
     public void printTotalMoney(String name, double totalMoney) {
         System.out.println("Role: Normal Customer: " + name + " | " + totalMoney);

@@ -11,13 +11,21 @@ public class CloseCustomer extends Customer{
         this.year = year;
     }
 
-    public double caculateTotalMoney(int productAmount, double productPrice, int year){
+
+    @Override
+    public double caculateTotalMoney(int productAmount, double productPrice) {
+        return 0;
+    }
+
+    @Override
+    public double caculateTotalMoney(int productAmount, double productPrice, int year) {
         double totalPriceWithoutVAT = productAmount * productPrice;
         double min = (double)year * 5 / 100;
         if(min > 50)
             min = 50;
         return totalPriceWithoutVAT * min / 100 + (totalPriceWithoutVAT * 10 / 100);
     }
+
     @Override
     public void printTotalMoney(String name, double totalMoney) {
         System.out.println("Role: Close Customer: " + name + " | " + totalMoney);
