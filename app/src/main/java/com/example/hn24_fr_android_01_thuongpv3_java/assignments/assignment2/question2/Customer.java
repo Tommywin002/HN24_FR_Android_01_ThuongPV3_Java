@@ -1,4 +1,4 @@
-package com.example.hn24_fr_android_01_thuongpv3_java.assignments.assignment2.Question2;
+package com.example.hn24_fr_android_01_thuongpv3_java.assignments.assignment2.question2;
 
 public abstract class Customer {
     private String name;

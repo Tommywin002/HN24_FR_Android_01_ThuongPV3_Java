@@ -1,4 +1,4 @@
-package com.example.hn24_fr_android_01_thuongpv3_java.assignments.assignment2.Question3;
+package com.example.hn24_fr_android_01_thuongpv3_java.assignments.assignment2.question3;
 
 public abstract class Room {
     private int nightNumber;

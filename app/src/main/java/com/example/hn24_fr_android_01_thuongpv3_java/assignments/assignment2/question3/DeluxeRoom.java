@@ -1,6 +1,6 @@
-package com.example.hn24_fr_android_01_thuongpv3_java.assignments.assignment2.Question3;
+package com.example.hn24_fr_android_01_thuongpv3_java.assignments.assignment2.question3;
 
-public class PremiumRoom extends Room{
+public class DeluxeRoom extends Room{
     private double serviceCharge;
 
     public double getServiceCharge() {
@@ -13,7 +13,7 @@ public class PremiumRoom extends Room{
 
     @Override
     public void printRoomType() {
-        System.out.println("Premium Room: " + getTotalMoney());
+        System.out.println("Deluxe Room: " + getTotalMoney());
     }
 
     @Override
@@ -23,6 +23,6 @@ public class PremiumRoom extends Room{
 
     @Override
     public double caculateMonthlyMoney(int nightNumber, double serviceFee) {
-        return ((double)nightNumber * 500000 +  serviceFee) * 105 / 100;
+        return ((double) nightNumber * 750000 + serviceFee) * 105 / 100;
     }
 }
