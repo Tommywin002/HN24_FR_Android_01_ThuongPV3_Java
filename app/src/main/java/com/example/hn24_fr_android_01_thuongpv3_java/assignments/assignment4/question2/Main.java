@@ -13,18 +13,17 @@ public class Main {
     public static HashMap<Integer, Student> studentHashMap = new HashMap<Integer, Student>();
     public static void main(String[] args) {
         int n = 0;
-        boolean checkN;
-        do {
-            checkN = true;
-            try {
+        boolean checkN = false;
+        while (checkN == false){
+            if(sc.hasNextInt()){
                 n = sc.nextInt();
+                checkN = true;
             }
-            catch (InputMismatchException e){
-                checkN = false;
-                System.out.println("wrong input");
+            else {
+                System.out.println("Please input correct number");
+                sc.nextLine();
             }
         }
-        while (checkN == false);
         System.out.println(n);
         inputStudentToHashMap(n);
         printStudentList();
@@ -35,11 +34,21 @@ public class Main {
         for(int i = 0; i < n; i++){
             //input RollNo
             System.out.println("input RollNo: ");
-            int rollNo;
+            int rollNo = 0;
+            boolean checkRollNo = false;
             do{
-                rollNo = sc.nextInt();
-                if (studentHashMap.containsKey(rollNo)) {
-                    System.out.println("There are already have this RollNo");
+                while (checkRollNo == false){
+                    if(sc.hasNextInt()){
+                        rollNo = sc.nextInt();
+                        if (studentHashMap.containsKey(rollNo)) {
+                            System.out.println("There are already have this RollNo");
+                        }
+                        checkRollNo = true;
+                    }
+                    else {
+                        System.out.println("Please input correct RollNo");
+                        sc.nextLine();
+                    }
                 }
             }
             while (studentHashMap.containsKey(rollNo));

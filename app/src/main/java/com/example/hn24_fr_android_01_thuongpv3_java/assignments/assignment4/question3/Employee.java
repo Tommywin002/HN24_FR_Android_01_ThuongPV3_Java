@@ -6,13 +6,15 @@ public class Employee {
     private String gender;
     private String dateOfBirth;
     private long phoneNumber;
+    private String degree;
 
-    public Employee(int id, String name, String sex, String dateOfBirth, long phoneNumber) {
+    public Employee(int id, String name, String gender, String dateOfBirth, long phoneNumber, String degree) {
         this.id = id;
         this.name = name;
-        this.gender = sex;
+        this.gender = gender;
         this.dateOfBirth = dateOfBirth;
         this.phoneNumber = phoneNumber;
+        this.degree = degree;
     }
 
     public int getId() {
@@ -53,5 +55,13 @@ public class Employee {
 
     public void setPhoneNumber(long phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public String getDegree() {
+        return degree;
+    }
+
+    public void setDegree(String degree) {
+        this.degree = degree;
     }
 }
