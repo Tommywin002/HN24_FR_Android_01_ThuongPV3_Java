@@ -1,9 +1,8 @@
 package com.example.hn24_fr_android_01_thuongpv3_java.assignments.assignment3;
 
-import java.lang.reflect.Array;
 import java.util.Scanner;
 
-public class question2 {
+public class Question2 {
     static int n;
     static int[] inputArray;
     public static void main(String[] args) {

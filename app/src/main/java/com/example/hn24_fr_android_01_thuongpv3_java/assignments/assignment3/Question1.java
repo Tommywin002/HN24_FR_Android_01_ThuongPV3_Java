@@ -3,7 +3,7 @@ package com.example.hn24_fr_android_01_thuongpv3_java.assignments.assignment3;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class question1 {
+public class Question1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         float firstNumber, secondNumber;
